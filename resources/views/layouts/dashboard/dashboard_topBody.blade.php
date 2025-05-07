@@ -1,7 +1,7 @@
                     <!--begin::Content container-->
                     <div id="kt_app_content_container" class="app-container container-fluid">
                         <!--begin::Row-->
-                        <div class="row g-5 gx-xl-10 mb-xl-10 mb-5">
+                        {{-- <div class="row g-5 gx-xl-10 mb-xl-10 mb-5">
                             <!--begin::Col-->
                             <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
                                 <!--begin::Card widget 20-->
@@ -419,10 +419,10 @@
                                 <!--end::Engage widget 10-->
                             </div>
                             <!--end::Col-->
-                        </div>
+                        </div> --}}
                         <!--end::Row-->
                         <!--begin::Row-->
-                        <div class="row gx-5 gx-xl-10">
+                        {{-- <div class="row gx-5 gx-xl-10">
                             <!--begin::Col-->
                             <div class="col-xxl-6 mb-xl-10 mb-5">
                                 <!--begin::Chart widget 8-->
@@ -1797,10 +1797,10 @@
                                 <!--end::Tables widget 16-->
                             </div>
                             <!--end::Col-->
-                        </div>
+                        </div> --}}
                         <!--end::Row-->
                         <!--begin::Row-->
-                        <div class="row g-5 g-xl-10 mb-xl-10 mb-5">
+                        {{-- <div class="row g-5 g-xl-10 mb-xl-10 mb-5">
                             <!--begin::Col-->
                             <div class="col-xxl-6">
                                 <!--begin::Card widget 18-->
@@ -2026,10 +2026,10 @@
                                 <!--end::Chart widget 36-->
                             </div>
                             <!--end::Col-->
-                        </div>
+                        </div> --}}
                         <!--end::Row-->
                         <!--begin::Row-->
-                        <div class="row g-5 g-xl-10 mb-xl-10 mb-5">
+                        {{-- <div class="row g-5 g-xl-10 mb-xl-10 mb-5">
                             <!--begin::Col-->
                             <div class="col-xl-4">
                                 <!--begin::Chart Widget 35-->
@@ -2862,7 +2862,7 @@
                                 <!--end::Table widget 14-->
                             </div>
                             <!--end::Col-->
-                        </div>
+                        </div> --}}
                         <!--end::Row-->
                         <!--begin::Row-->
                         <div class="row gx-5 gx-xl-10">
@@ -2990,8 +2990,8 @@
                                                 <!--begin::Menu item-->
                                                 <div class="menu-item px-3">
                                                     <div class="menu-content px-3 py-3">
-                                                        <a class="btn btn-primary btn-sm px-4"
-                                                            href="#">Generate Reports</a>
+                                                        <a class="btn btn-primary btn-sm px-4" href="#">Generate
+                                                            Reports</a>
                                                     </div>
                                                 </div>
                                                 <!--end::Menu item-->
