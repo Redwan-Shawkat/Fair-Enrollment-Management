@@ -25,16 +25,11 @@
     <div class="menu menu-sub menu-sub-dropdown menu-column w-350px w-lg-375px" data-kt-menu="true"
         id="kt_menu_notifications">
         <!--begin::Heading-->
-        <div class="d-flex flex-column bgi-no-repeat rounded-top"
-            style="
-            background-image: url('assets/media/misc/menu-header-bg.jpg');
-          ">
-            @include('layouts.header.navbar.notifications.partials.notiHead_design')
-        </div>
+        @include('layouts.header.navbar.notifications.partials.notiHead_design')
         <!--end::Heading-->
         <!--begin::Tab content-->
         <div class="tab-content">
-            {{-- @include('layouts.header.navbar.notifications.notifications') --}}
+            @include('layouts.header.navbar.notifications.notifications')
         </div>
         <!--end::Tab content-->
     </div>
