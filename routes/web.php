@@ -8,7 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-route::get('/home',[testController::class,'index']);
+route::get('/',[testController::class,'index']);
 
 route::get('/items',[ItemController::class,'index'])->name('items.index');
 route::post('/items',[ItemController::class, 'store'])->name('items.store');
