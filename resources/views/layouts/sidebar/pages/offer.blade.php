@@ -1,5 +1,5 @@
 <!--begin:Menu link-->
-<a class="menu-link" href="dashboards/ecommerce.html">
+<a class="menu-link" href="pages/offer.html">
     <span class="menu-icon">
         {{-- <i class="ki-duotone ki-file fs-2"> --}}
         <i class="ki-duotone ki-tag fs-2">

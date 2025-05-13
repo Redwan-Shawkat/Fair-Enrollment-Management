@@ -1,5 +1,5 @@
 <!--begin:Menu link-->
-<a class="menu-link" href="dashboards/ecommerce.html">
+<a class="menu-link" href="dashboards/drawstat.html">
     <span class="menu-icon">
         <i class="ki-duotone ki-chart fs-2">
             <span class="path1"></span>
