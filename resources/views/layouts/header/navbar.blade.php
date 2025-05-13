@@ -1,15 +1,15 @@
 <!--begin::Search-->
 <div class="app-navbar-item align-items-stretch ms-md-4 ms-1">
-    @include('layouts.header.navbar.search.search')
+    {{-- @include('layouts.header.navbar.search.search') --}}
 </div>
 <!--end::Search-->
 <!--begin::Activities-->
 <div class="app-navbar-item ms-md-4 ms-1">
-    @include('layouts.header.navbar.activities.activities')
+    {{-- @include('layouts.header.navbar.activities.activities') --}}
 </div>
 <!--end::Activities-->
 <!--begin::Notifications-->
-<div class="app-navbar-item ms-md-4 ms-1">
+{{-- <div class="app-navbar-item ms-md-4 ms-1">
     <!--begin::Menu- wrapper-->
     <div class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px"
         data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent"
@@ -35,11 +35,11 @@
     </div>
     <!--end::Menu-->
     <!--end::Menu wrapper-->
-</div>
+</div> --}}
 <!--end::Notifications-->
 <!--begin::Chat-->
 <div class="app-navbar-item ms-md-4 ms-1">
-    @include('layouts.header.navbar.chatapp')
+    {{-- @include('layouts.header.navbar.chatapp') --}}
 </div>
 <!--end::Chat-->
 <!--begin::My apps links-->
