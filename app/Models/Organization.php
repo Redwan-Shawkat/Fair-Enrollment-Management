@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Organization extends Model
 {
+
+    protected $table = 'organizationinfo';
+
      protected $fillable = [
         'id',
         'name',
@@ -13,5 +16,5 @@ class Organization extends Model
         'logo',
         'isactive',
         'input_field_ids'
-    ]
+     ];
 }

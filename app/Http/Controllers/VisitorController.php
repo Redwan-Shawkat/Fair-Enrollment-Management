@@ -12,7 +12,8 @@ class VisitorController extends Controller
      */
     public function index()
     {
-        // return view('layouts.test');
+        $visitors = Visitor::all();
+        return view('layouts.visitor.visitor',compact('visitors'));
     }
 
     /**
