@@ -2,7 +2,7 @@
 
 @section('content')
     <h1> Visitors List </h1>
-    <table border="2">
+    <table border="2" class="table-responsive">
         <thead>
             <tr>
                 <th>Name</th>
