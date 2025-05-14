@@ -1,14 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\testController;
-use App\Http\Controllers\ItemController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\OrganizationController;
+use App\Http\Controllers\VisitorController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-route::get('/',[testController::class,'index']);
+route::get('/',[DashboardController::class,'index']);
 
-route::get('/items',[ItemController::class,'index'])->name('items.index');
-route::post('/items',[ItemController::class, 'store'])->name('items.store');
+route::get('/organization',[OrganizationController::class,'index'])->name('organization.index');
+route::get('/visitor',[VisitorController::class,'index'])->name('visitor.index');

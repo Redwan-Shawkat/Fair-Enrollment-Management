@@ -3,7 +3,7 @@
     data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
     <!--begin::Logo-->
     <div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
-        @include('layouts.sidebar.sidebar_logo')
+        @include('layouts.dashboard.sidebar.sidebar_logo')
     </div>
     <!--end::Logo-->
     <!--begin::sidebar menu-->
@@ -20,10 +20,10 @@
                 <div class="menu menu-column menu-rounded menu-sub-indention fw-semibold fs-6" id="#kt_app_sidebar_menu"
                     data-kt-menu="true" data-kt-menu-expand="false">
                     <!--begin:Menu item-->
-                    {{-- @include('layouts.sidebar.sidebar_dashboard') --}}
+                    {{-- @include('layouts.dashboard.sidebar.sidebar_dashboard') --}}
                     <!--end:Menu item-->
                     {{-- Pages --}}
-                    @include('layouts.sidebar.sidebar_pages')
+                    @include('layouts.dashboard.sidebar.sidebar_pages')
                     <!--end:Menu item-->
                     <!--end:Menu item-->
                 </div>

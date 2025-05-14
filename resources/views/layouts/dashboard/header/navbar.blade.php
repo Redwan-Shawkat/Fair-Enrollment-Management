@@ -25,11 +25,11 @@
     <div class="menu menu-sub menu-sub-dropdown menu-column w-350px w-lg-375px" data-kt-menu="true"
         id="kt_menu_notifications">
         <!--begin::Heading-->
-        @include('layouts.header.navbar.notifications.partials.notiHead_design')
+        @include('layouts.dashboard.header.navbar.notifications.partials.notiHead_design')
         <!--end::Heading-->
         <!--begin::Tab content-->
         <div class="tab-content">
-            @include('layouts.header.navbar.notifications.notifications')
+            @include('layouts.dashboard.header.navbar.notifications.notifications')
         </div>
         <!--end::Tab content-->
     </div>
@@ -39,27 +39,27 @@
 <!--end::Notifications-->
 <!--begin::Chat-->
 <div class="app-navbar-item ms-md-4 ms-1">
-    {{-- @include('layouts.header.navbar.chatapp') --}}
+    {{-- @include('layouts.dashboard.header.navbar.chatapp') --}}
 </div>
 <!--end::Chat-->
 <!--begin::My apps links-->
 <div class="app-navbar-item ms-md-4 ms-1">
-    {{-- @include('layouts.header.navbar.myapps') --}}
+    {{-- @include('layouts.dashboard.header.navbar.myapps') --}}
 </div>
 <!--end::My apps links-->
 <!--begin::Theme mode-->
 <div class="app-navbar-item ms-md-4 ms-1">
-    @include('layouts.header.navbar.theme-mode.thememode')
+    @include('layouts.dashboard.header.navbar.theme-mode.thememode')
 </div>
 <!--end::Theme mode-->
 <!--begin::User menu-->
 <div class="app-navbar-item ms-md-4 ms-1" id="kt_header_user_menu_toggle">
-    @include('layouts.header.user')
+    @include('layouts.dashboard.header.user')
 </div>
 <!--end::User menu-->
 <!--begin::Header menu toggle-->
 <div class="app-navbar-item d-lg-none me-n2 ms-2" title="Show header menu">
-    @include('layouts.header.navbar.header-toggle.headertoggle')
+    @include('layouts.dashboard.header.navbar.header-toggle.headertoggle')
 </div>
 <!--end::Header menu toggle-->
 <!--begin::Aside toggle-->

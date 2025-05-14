@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Item;
+use App\Models\Visitor;
 use Illuminate\Http\Request;
 
-class ItemController extends Controller
+class VisitorController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $items = Items::all();
-        return view('items.index',compact('items'));
+        // return view('layouts.test');
     }
 
     /**
@@ -29,16 +28,13 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
-        $request ->validate(['title' => 'required']);
-        Item::create('title' => $request -> titlle);
-
-        return redirect()-> route('items.index')
+        //
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Item $item)
+    public function show(Visitor $visitor)
     {
         //
     }
@@ -46,7 +42,7 @@ class ItemController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Item $item)
+    public function edit(Visitor $visitor)
     {
         //
     }
@@ -54,7 +50,7 @@ class ItemController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Item $item)
+    public function update(Request $request, Visitor $visitor)
     {
         //
     }
@@ -62,7 +58,7 @@ class ItemController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Item $item)
+    public function destroy(Visitor $visitor)
     {
         //
     }
