@@ -24,7 +24,7 @@ class Visitor extends Model
         'prom_offerOid',
         'is_redeem',
         'profession_id',
-        'product_interest_id',
+        'product_interest_id', //Foreign Key
         'coupon_code'
     ];
 }

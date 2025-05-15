@@ -1,5 +1,7 @@
 @extends('layouts.app');
 
+@section('title', 'Visitors')
+
 @section('content')
     <h1> Visitors List </h1>
     <table border="2" class="table-responsive">
