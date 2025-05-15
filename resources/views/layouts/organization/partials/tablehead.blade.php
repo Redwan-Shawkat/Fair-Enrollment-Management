@@ -1,0 +1,10 @@
+<th class="min-w-300px rounded-start ps-4">Name</th>
+<th class="min-w-125px">Address</th>
+{{-- <th class="min-w-125px">Logo</th> --}}
+<th class="min-w-200px">Active</th>
+<th class="min-w-150px">Input Field Ids</th>
+{{-- <th class="min-w-150px">Created At</th>
+<th class="min-w-150px">Created By</th>
+<th class="min-w-150px">Updated At </th>
+<th class="min-w-150px"> Updated By </th> --}}
+<th class="min-w-200px rounded-end text-end"></th>
