@@ -17,83 +17,83 @@
     <div class="menu-sub menu-sub-accordion">
         <!--begin:Menu item-->
         <div class="menu-item">
-            @include('layouts.sidebar.dashboard_menu.menu1')
+            @include('layouts.dashboard.sidebar.dashboard_menu.menu1')
         </div>
         <!--end:Menu item-->
         <!--begin:Menu item-->
         <div class="menu-item">
-            @include('layouts.sidebar.dashboard_menu.menu2')
+            @include('layouts.dashboard.sidebar.dashboard_menu.menu2')
         </div>
         <!--end:Menu item-->
         <!--begin:Menu item-->
         <div class="menu-item">
-            @include('layouts.sidebar.dashboard_menu.menu3')
+            @include('layouts.dashboard.sidebar.dashboard_menu.menu3')
         </div>
         <!--end:Menu item-->
         <!--begin:Menu item-->
         <div class="menu-item">
-            @include('layouts.sidebar.dashboard_menu.menu4')
+            @include('layouts.dashboard.sidebar.dashboard_menu.menu4')
         </div>
         <!--end:Menu item-->
         <!--begin:Menu item-->
         <div class="menu-item">
-            @include('layouts.sidebar.dashboard_menu.menu5')
+            @include('layouts.dashboard.sidebar.dashboard_menu.menu5')
         </div>
         <!--end:Menu item-->
         <div class="menu-inner flex-column collapse" id="kt_app_sidebar_menu_dashboards_collapse">
             <!--begin:Menu item-->
             <div class="menu-item">
-                @include('layouts.sidebar.dashboard_menu.menu6')
+                @include('layouts.dashboard.sidebar.dashboard_menu.menu6')
             </div>
             <!--end:Menu item-->
             <!--begin:Menu item-->
             <div class="menu-item">
-                @include('layouts.sidebar.dashboard_menu.menu7')
+                @include('layouts.dashboard.sidebar.dashboard_menu.menu7')
             </div>
             <!--end:Menu item-->
             <!--begin:Menu item-->
             <div class="menu-item">
-                @include('layouts.sidebar.dashboard_menu.menu8')
+                @include('layouts.dashboard.sidebar.dashboard_menu.menu8')
             </div>
             <!--end:Menu item-->
             <!--begin:Menu item-->
             <div class="menu-item">
-                @include('layouts.sidebar.dashboard_menu.menu9')
+                @include('layouts.dashboard.sidebar.dashboard_menu.menu9')
             </div>
             <!--end:Menu item-->
             <!--begin:Menu item-->
             <div class="menu-item">
-                @include('layouts.sidebar.dashboard_menu.menu10')
+                @include('layouts.dashboard.sidebar.dashboard_menu.menu10')
             </div>
             <!--end:Menu item-->
             <!--begin:Menu item-->
             <div class="menu-item">
-                @include('layouts.sidebar.dashboard_menu.menu11')
+                @include('layouts.dashboard.sidebar.dashboard_menu.menu11')
             </div>
             <!--end:Menu item-->
             <!--begin:Menu item-->
             <div class="menu-item">
-                @include('layouts.sidebar.dashboard_menu.menu12')
+                @include('layouts.dashboard.sidebar.dashboard_menu.menu12')
             </div>
             <!--end:Menu item-->
             <!--begin:Menu item-->
             <div class="menu-item">
-                @include('layouts.sidebar.dashboard_menu.menu13')
+                @include('layouts.dashboard.sidebar.dashboard_menu.menu13')
             </div>
             <!--end:Menu item-->
             <!--begin:Menu item-->
             <div class="menu-item">
-                @include('layouts.sidebar.dashboard_menu.menu14')
+                @include('layouts.dashboard.sidebar.dashboard_menu.menu14')
             </div>
             <!--end:Menu item-->
             <!--begin:Menu item-->
             <div class="menu-item">
-                @include('layouts.sidebar.dashboard_menu.menu15')
+                @include('layouts.dashboard.sidebar.dashboard_menu.menu15')
             </div>
             <!--end:Menu item-->
             <!--begin:Menu item-->
             <div class="menu-item">
-                @include('layouts.sidebar.dashboard_menu.menu16')
+                @include('layouts.dashboard.sidebar.dashboard_menu.menu16')
             </div>
             <!--end:Menu item-->
             <!--begin:Menu item-->

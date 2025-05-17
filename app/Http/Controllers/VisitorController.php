@@ -13,6 +13,7 @@ class VisitorController extends Controller
     public function index()
     {
         $visitors = Visitor::all();
+        // $visitors = Visitor::paginate(10);
         return view('layouts.visitor.visitor',compact('visitors'));
     }
 

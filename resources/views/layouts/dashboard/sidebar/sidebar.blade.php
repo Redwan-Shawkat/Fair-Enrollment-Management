@@ -24,6 +24,7 @@
                     <!--end:Menu item-->
                     {{-- Pages --}}
                     @include('layouts.dashboard.sidebar.sidebar_pages')
+
                     <!--end:Menu item-->
                     <!--end:Menu item-->
                 </div>
