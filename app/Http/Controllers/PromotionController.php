@@ -2,17 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\offer;
+use App\Models\promotion;
 use Illuminate\Http\Request;
 
-class OfferController extends Controller
+class PromotionController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $promotions = promotion::paginate(4);
+        // $promotions = promotion::all();
+        return view('layouts.promotion.promotion',compact('promotions'));
     }
 
     /**
@@ -34,7 +36,7 @@ class OfferController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(offer $offer)
+    public function show(promotion $promotion)
     {
         //
     }
@@ -42,7 +44,7 @@ class OfferController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(offer $offer)
+    public function edit(promotion $promotion)
     {
         //
     }
@@ -50,7 +52,7 @@ class OfferController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, offer $offer)
+    public function update(Request $request, promotion $promotion)
     {
         //
     }
@@ -58,7 +60,7 @@ class OfferController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(offer $offer)
+    public function destroy(promotion $promotion)
     {
         //
     }

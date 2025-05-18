@@ -11,8 +11,8 @@
             <!--begin::Item-->
             <li class="breadcrumb-item text-muted">
                 <a href="#" class="text-muted text-hover-primary">
-                    {{-- Organization --}}
-                    @yield('table_name', 'Visitor')
+                    {{-- Promotion --}}
+                    @yield('table_name', 'Promotion')
                 </a>
             </li>
             <!--end::Item-->
@@ -33,7 +33,7 @@
         <!--begin::Filter menu-->
         <div class="m-0">
             <!--begin::Menu toggle-->
-            @include('layouts.organization.partials.partials.filterbtn')
+            @include('layouts.promotion.partials.partials.filterbtn')
             <!--end::Menu 1-->
         </div>
         <!--end::Filter menu-->
@@ -41,7 +41,7 @@
         <!--end::Secondary button-->
         <!--begin::Primary button-->
         <div class="m-0">
-            @include('layouts.organization.partials.partials.createbtn')
+            @include('layouts.promotion.partials.partials.createbtn')
         </div>
         <!--end::Primary button-->
     </div>

@@ -2,19 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Visitor;
+use App\Models\userInfo;
 use Illuminate\Http\Request;
 
-class VisitorController extends Controller
+class UserInfoController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // $visitors = Visitor::all();
-        $visitors = Visitor::paginate(10);
-        return view('layouts.visitor.visitor',compact('visitors'));
+        $users = userInfo::paginate(4);
+        return view('layouts.userinfo.user', compact('users'));
     }
 
     /**
@@ -36,7 +35,7 @@ class VisitorController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Visitor $visitor)
+    public function show(userInfo $userInfo)
     {
         //
     }
@@ -44,7 +43,7 @@ class VisitorController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Visitor $visitor)
+    public function edit(userInfo $userInfo)
     {
         //
     }
@@ -52,7 +51,7 @@ class VisitorController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Visitor $visitor)
+    public function update(Request $request, userInfo $userInfo)
     {
         //
     }
@@ -60,7 +59,7 @@ class VisitorController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Visitor $visitor)
+    public function destroy(userInfo $userInfo)
     {
         //
     }

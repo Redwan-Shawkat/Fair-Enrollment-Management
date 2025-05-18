@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class profession extends Model
+{
+    protected $table = 'professions';
+    protected $fillable = [
+        'id',
+        'name',
+        'active_Status'
+    ];
+}

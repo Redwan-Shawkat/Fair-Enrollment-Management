@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Visitor;
+use App\Models\profession;
 use Illuminate\Http\Request;
 
-class VisitorController extends Controller
+class ProfessionController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // $visitors = Visitor::all();
-        $visitors = Visitor::paginate(10);
-        return view('layouts.visitor.visitor',compact('visitors'));
+        // $professions = profession::all();
+        $professions = profession::paginate(8);
+        return view('layouts.profession.profession', compact('professions'));
     }
 
     /**
@@ -36,7 +36,7 @@ class VisitorController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Visitor $visitor)
+    public function show(profession $profession)
     {
         //
     }
@@ -44,7 +44,7 @@ class VisitorController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Visitor $visitor)
+    public function edit(profession $profession)
     {
         //
     }
@@ -52,7 +52,7 @@ class VisitorController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Visitor $visitor)
+    public function update(Request $request, profession $profession)
     {
         //
     }
@@ -60,7 +60,7 @@ class VisitorController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Visitor $visitor)
+    public function destroy(profession $profession)
     {
         //
     }

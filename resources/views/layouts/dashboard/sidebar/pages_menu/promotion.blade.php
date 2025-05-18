@@ -1,7 +1,7 @@
 <!--begin:Menu link-->
 <span class="menu-link">
     <span class="menu-icon">
-        <i class="ki-duotone ki-call fs-2">
+        <i class="ki-duotone ki-tag fs-2">
             <span class="path1"></span>
             <span class="path2"></span>
             <span class="path3"></span>
@@ -12,7 +12,7 @@
             <span class="path8"></span>
         </i>
     </span>
-    <span class="menu-title">Careers</span>
+    <span class="menu-title">Promotion</span>
     <span class="menu-arrow"></span>
 </span>
 <!--end:Menu link-->
@@ -21,11 +21,11 @@
     <!--begin:Menu item-->
     <div class="menu-item">
         <!--begin:Menu link-->
-        <a class="menu-link" href="pages/careers/list.html">
+        <a class="menu-link" href="promotion">
             <span class="menu-bullet">
                 <span class="bullet bullet-dot"></span>
             </span>
-            <span class="menu-title">Careers List</span>
+            <span class="menu-title">View List</span>
         </a>
         <!--end:Menu link-->
     </div>
@@ -33,11 +33,11 @@
     <!--begin:Menu item-->
     <div class="menu-item">
         <!--begin:Menu link-->
-        <a class="menu-link" href="pages/careers/apply.html">
+        <a class="menu-link" href="/newpromotion">
             <span class="menu-bullet">
                 <span class="bullet bullet-dot"></span>
             </span>
-            <span class="menu-title">Careers Apply</span>
+            <span class="menu-title">Add New</span>
         </a>
         <!--end:Menu link-->
     </div>

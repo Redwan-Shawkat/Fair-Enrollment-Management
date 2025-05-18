@@ -1,18 +1,12 @@
 <!--begin:Menu link-->
 <span class="menu-link">
     <span class="menu-icon">
-        <i class="ki-duotone ki-tag fs-2">
+        <i class="ki-duotone ki-user">
             <span class="path1"></span>
             <span class="path2"></span>
-            <span class="path3"></span>
-            <span class="path4"></span>
-            <span class="path5"></span>
-            <span class="path6"></span>
-            <span class="path7"></span>
-            <span class="path8"></span>
         </i>
     </span>
-    <span class="menu-title">Offer</span>
+    <span class="menu-title">UserInfo</span>
     <span class="menu-arrow"></span>
 </span>
 <!--end:Menu link-->
@@ -21,11 +15,11 @@
     <!--begin:Menu item-->
     <div class="menu-item">
         <!--begin:Menu link-->
-        <a class="menu-link" href="offers">
+        <a class="menu-link" href="/user">
             <span class="menu-bullet">
                 <span class="bullet bullet-dot"></span>
             </span>
-            <span class="menu-title">Offer List</span>
+            <span class="menu-title">View List</span>
         </a>
         <!--end:Menu link-->
     </div>
@@ -33,7 +27,7 @@
     <!--begin:Menu item-->
     <div class="menu-item">
         <!--begin:Menu link-->
-        <a class="menu-link" href="pages/careers/apply.html">
+        <a class="menu-link" href="/newuser">
             <span class="menu-bullet">
                 <span class="bullet bullet-dot"></span>
             </span>
@@ -42,5 +36,6 @@
         <!--end:Menu link-->
     </div>
     <!--end:Menu item-->
+
 </div>
 <!--end:Menu sub-->

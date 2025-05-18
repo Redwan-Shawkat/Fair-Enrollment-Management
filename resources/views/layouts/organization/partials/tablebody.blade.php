@@ -1,44 +1,49 @@
-<tr>
     @foreach ($organizations as $org)
-        <td>
-            <div class="d-flex align-items-center">
-                <div class="symbol symbol-50px me-5">
-                    {{-- <span class="symbol-label bg-light">
+        <tr>
+            <td>
+                <div class="d-flex align-items-center">
+                    <div class="symbol symbol-50px me-5">
+                        {{-- <span class="symbol-label bg-light">
                     <img src="assets/media/svg/avatars/001-boy.svg" class="h-75 align-self-end" alt="" />
                 </span> --}}
-                </div>
-                <div class="d-flex justify-content-start flex-column">
-                    <a href="#" class="fw-bold text-hover-primary fs-6 mb-1 text-gray-900">
-                        {{ $org->id }}
-                    </a>
-                    {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">HTML, JS,
+                    </div>
+                    <div class="d-flex justify-content-start flex-column w-50 mx-auto">
+                        <a href="#" class="fw-bold text-hover-primary fs-6 mb-1 text-gray-900">
+                            {{ $org->id }}
+                        </a>
+                        {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">HTML, JS,
                     ReactJS</span> --}}
+                    </div>
                 </div>
-            </div>
-        </td>
-        <td>
-            <a href="#" class="fw-bold text-hover-primary d-block fs-6 mb-1 text-gray-900">{{ $org->name }}</a>
-            {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Pending</span> --}}
-        </td>
-        <td>
-            <a href="#" class="fw-bold text-hover-primary d-block fs-6 mb-1 text-gray-900">{{ $org->address }}</a>
-            {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Paid</span> --}}
-        </td>
-        <td>
-            <a href="#" class="fw-bold text-hover-primary d-block fs-6 mb-1 text-gray-900">{{ $org->logo }}</a>
-            {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Web, UI/UX Design</span> --}}
-        </td>
-        <td>
-            <span class="text-muted fw-semibold text-muted d-block fs-7 mt-1">{{ $org->isactive }}</span>
-        </td>
-        <td>
-            <span class="text-muted fw-semibold text-muted d-block fs-7 mt-1">{{ $org->input_field_ids }}</span>
-        </td>
-        <td class="text-end">
-            {{-- <a href="#"
+            </td>
+            <td>
+                <a href="#"
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $org->name }}</a>
+                {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Pending</span> --}}
+            </td>
+            <td>
+                <a href="#"
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $org->address }}</a>
+                {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Paid</span> --}}
+            </td>
+            <td>
+                <a href="#"
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $org->logo }}</a>
+                {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Web, UI/UX Design</span> --}}
+            </td>
+            <td>
+                <span
+                    class="text-muted fw-semibold text-muted d-block fs-7 mt-1 text-center">{{ $org->isactive }}</span>
+            </td>
+            <td>
+                <span
+                    class="text-muted fw-semibold text-muted d-block fs-7 mt-1 text-center">{{ $org->input_field_ids }}</span>
+            </td>
+            <td class="text-center">
+                {{-- <a href="#"
                 class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm me-2 px-4">View</a> --}}
-            <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
-        </td>
-</tr>
-@endforeach
-</tr>
+                <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
+            </td>
+        </tr>
+        </tr>
+    @endforeach
