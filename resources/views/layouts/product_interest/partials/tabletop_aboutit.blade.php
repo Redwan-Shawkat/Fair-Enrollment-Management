@@ -11,8 +11,8 @@
             <!--begin::Item-->
             <li class="breadcrumb-item text-muted">
                 <a href="#" class="text-muted text-hover-primary">
-                    {{-- Organization --}}
-                    @yield('table_name', 'Organization')
+                    {{-- Product --}}
+                    @yield('table_name', 'Product Interest')
                 </a>
             </li>
             <!--end::Item-->
