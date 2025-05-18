@@ -8,6 +8,7 @@ use App\Http\Controllers\ProductInterestController;
 use App\Http\Controllers\ProfessionController;
 use App\Http\Controllers\PromotionController;
 use App\Http\Controllers\UserInfoController;
+use App\Http\Controllers\DrawstatController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -33,3 +34,6 @@ route::get('/promotion', [PromotionController::class, 'index'])->name('promotion
 
 // User
 route::get('/user', [UserInfoController::class, 'index'])->name('user.index');
+
+//Drawstat
+route::get('/drawstat', [DrawstatController::class,'index'])->name('drawstat.index');

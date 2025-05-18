@@ -21,7 +21,7 @@
     <!--begin:Menu item-->
     <div class="menu-item">
         <!--begin:Menu link-->
-        <a class="menu-link" href="pages/careers/list.html">
+        <a class="menu-link" href="/drawstat">
             <span class="menu-bullet">
                 <span class="bullet bullet-dot"></span>
             </span>
@@ -33,7 +33,7 @@
     <!--begin:Menu item-->
     <div class="menu-item">
         <!--begin:Menu link-->
-        <a class="menu-link" href="pages/careers/apply.html">
+        <a class="menu-link" href="/newdrawstat">
             <span class="menu-bullet">
                 <span class="bullet bullet-dot"></span>
             </span>
