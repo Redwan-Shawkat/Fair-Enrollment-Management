@@ -12,7 +12,7 @@
             <li class="breadcrumb-item text-muted">
                 <a href="#" class="text-muted text-hover-primary">
                     {{-- User --}}
-                    @yield('table_name', 'User');
+                    @yield('table_name', 'User')
                 </a>
             </li>
             <!--end::Item-->
