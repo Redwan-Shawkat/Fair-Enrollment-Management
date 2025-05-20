@@ -8,7 +8,7 @@
             </td>
             <td>
                 <a href="#"
-                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $drawstat->visitorid }}</a>
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $drawstat->drawstatid }}</a>
             </td>
             <td>
                 <a href="#"
