@@ -26,7 +26,7 @@
 <!--end:Menu item-->
 <!--begin:Menu item-->
 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-    @include('layouts.dashboard.sidebar.pages_menu.organizations')
+    @include('layouts.dashboard.sidebar.pages_menu.company')
 </div>
 <!--end:Menu item-->
 <!--begin:Menu item-->

@@ -1,4 +1,4 @@
-    @foreach ($organizations as $org)
+    @foreach ($companies as $comp)
         <tr>
             <td>
                 <div class="d-flex align-items-center">
@@ -9,7 +9,7 @@
                     </div>
                     <div class="d-flex justify-content-start flex-column w-50 mx-auto">
                         <a href="#" class="fw-bold text-hover-primary fs-6 mb-1 text-gray-900">
-                            {{ $org->id }}
+                            {{ $comp->id }}
                         </a>
                         {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">HTML, JS,
                     ReactJS</span> --}}
@@ -18,26 +18,26 @@
             </td>
             <td>
                 <a href="#"
-                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $org->name }}</a>
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $comp->name }}</a>
                 {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Pending</span> --}}
             </td>
             <td>
                 <a href="#"
-                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $org->address }}</a>
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $comp->address }}</a>
                 {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Paid</span> --}}
             </td>
             <td>
                 <a href="#"
-                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $org->logo }}</a>
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $comp->logo }}</a>
                 {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Web, UI/UX Design</span> --}}
             </td>
             <td>
                 <span
-                    class="text-muted fw-semibold text-muted d-block fs-7 mt-1 text-center">{{ $org->isactive }}</span>
+                    class="text-muted fw-semibold text-muted d-block fs-7 mt-1 text-center">{{ $comp->isactive }}</span>
             </td>
             <td>
                 <span
-                    class="text-muted fw-semibold text-muted d-block fs-7 mt-1 text-center">{{ $org->input_field_ids }}</span>
+                    class="text-muted fw-semibold text-muted d-block fs-7 mt-1 text-center">{{ $comp->input_field_ids }}</span>
             </td>
             <td class="text-center">
                 {{-- <a href="#"

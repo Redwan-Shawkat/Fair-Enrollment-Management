@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\OrganizationController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\ProductInterestController;
 use App\Http\Controllers\ProfessionController;
@@ -22,9 +22,9 @@ Route::get('/', function () {
 // Data Read
 route::get('/',[DashboardController::class,'index']);
 
-// Organization
+// Company
 // Data Read
-route::get('/organization',[OrganizationController::class,'index'])->name('organization.index');
+route::get('/company',[CompanyController::class,'index'])->name('company.index');
 
 // Visitors
 
