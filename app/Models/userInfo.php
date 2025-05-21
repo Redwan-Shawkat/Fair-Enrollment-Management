@@ -12,6 +12,7 @@ class userInfo extends Model
         'companyid',
         'fullname',
         'email',
+        'password',
         'contactno',
         'dateofbirth',
         'gender',
