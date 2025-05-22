@@ -51,13 +51,13 @@
   <!--end::Menu separator-->
   <!--begin::Menu item-->
   <div class="menu-item px-5">
-    <a href="account/overview.html" class="menu-link px-5"
+    <a href="/profile" class="menu-link px-5"
       >My Profile</a
     >
   </div>
   <!--end::Menu item-->
   <!--begin::Menu item-->
-  <div class="menu-item px-5">
+  <!-- <div class="menu-item px-5">
     <a href="apps/projects/list.html" class="menu-link px-5">
       <span class="menu-text">My Projects</span>
       <span class="menu-badge">
@@ -67,7 +67,7 @@
         >
       </span>
     </a>
-  </div>
+  </div> -->
   <!--end::Menu item-->
   <!--begin::Menu item-->
   <div
@@ -108,7 +108,7 @@
       </div>
       <!--end::Menu item-->
       <!--begin::Menu item-->
-      <div class="menu-item px-3">
+      <!-- <div class="menu-item px-3">
         <a
           href="account/statements.html"
           class="menu-link d-flex flex-stack px-5"
@@ -124,7 +124,7 @@
               <span class="path3"></span>
             </i> </span
         ></a>
-      </div>
+      </div> -->
       <!--end::Menu item-->
       <!--begin::Menu separator-->
       <div class="separator my-2"></div>
@@ -154,14 +154,14 @@
   </div>
   <!--end::Menu item-->
   <!--begin::Menu item-->
-  <div class="menu-item px-5">
+  <!-- <div class="menu-item px-5">
     <a href="account/statements.html" class="menu-link px-5"
       >My Statements</a
     >
-  </div>
+  </div> -->
   <!--end::Menu item-->
   <!--begin::Menu separator-->
-  <div class="separator my-2"></div>
+  <!-- <div class="separator my-2"></div> -->
   <!--end::Menu separator-->
   <!--begin::Menu item-->
   <div
@@ -385,11 +385,18 @@
   <!--begin::Menu item-->
   <div class="menu-item px-5">
     <a
-      href="authentication/layouts/corporate/sign-in.html"
+      href="/logout"
       class="menu-link px-5"
       >Sign Out</a
     >
   </div>
+
+  <!-- <form method="POST" action="{{ route('logout') }}" style="display: inline;">
+    @csrf
+    <button type="submit" style="background: none; border: none; color: blue; text-decoration: underline; cursor: pointer;">
+        Sign Out
+    </button>
+</form> -->
   <!--end::Menu item-->
 </div>
 <!--end::User account menu-->

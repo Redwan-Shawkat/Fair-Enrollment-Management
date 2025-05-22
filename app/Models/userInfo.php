@@ -2,10 +2,17 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+// use Illuminate\Database\Eloquent\Model;
 
-class userInfo extends Model
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+
+// class userInfo extends Model
+class userInfo extends Authenticatable
 {
+
+    use Notifiable;
+
     protected $table = 'webuserinfo';
     protected $fillable = [
         'webuserid',
@@ -27,4 +34,10 @@ class userInfo extends Model
         'forgottenpasswordtoken',
         'created_at',
     ];
+
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
+
+    protected $primaryKey = 'webuserid';
 }
