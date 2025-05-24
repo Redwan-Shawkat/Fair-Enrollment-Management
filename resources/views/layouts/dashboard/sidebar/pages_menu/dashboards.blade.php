@@ -1,5 +1,5 @@
 <!--begin:Menu link-->
-<a class="menu-link" href="/">
+<a class="menu-link" href="/dashboard">
     <span class="menu-icon">
         <i class="ki-duotone ki-element-plus fs-2">
             {{-- <i class="ki-duotone ki-element-11 fs-2"> --}}
