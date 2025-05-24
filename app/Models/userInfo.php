@@ -6,9 +6,11 @@ namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+//
+use Illuminate\Contracts\Auth\CanResetPassword;
 
 // class userInfo extends Model
-class userInfo extends Authenticatable
+class userInfo extends Authenticatable implements CanResetPassword
 {
 
     use Notifiable;
@@ -36,8 +38,25 @@ class userInfo extends Authenticatable
     ];
 
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token','forgottenpasswordtoken',
     ];
 
     protected $primaryKey = 'webuserid';
+
+    /* PASSWORD RESET */
+
+    // Selecting the exact email
+    public function getEmailForPasswordReset(){
+        return $this->email;
+    }
+
+    // Send Password Reset Notification
+    // public function sendPasswordResetNotification($token){
+        // Storing token in the desired table
+        // $this->update(['forgottenpasswordtoken' => $token]);
+        // Sending notification
+        // $this->notify(new \Illuminate\Auth\Notifications\ResetPassword($token));
+    // }
+
+
 }

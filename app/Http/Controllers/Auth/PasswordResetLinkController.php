@@ -8,6 +8,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
 use Illuminate\View\View;
 
+// Later for password reset
+use Illuminate\Support\str;
+use Illuminate\Support\Facades\Validator;
+use App\Models\userInfo;
+use App\Notifications\ResetPasswordCustomNotification;
+
+
 class PasswordResetLinkController extends Controller
 {
     /**
@@ -32,13 +39,36 @@ class PasswordResetLinkController extends Controller
         // We will send the password reset link to this user. Once we have attempted
         // to send the link, we will examine the response then see the message we
         // need to show to the user. Finally, we'll send out a proper response.
-        $status = Password::sendResetLink(
-            $request->only('email')
-        );
+    //     $status = Password::sendResetLink(
+    //         $request->only('email')
+    //     );
 
-        return $status == Password::RESET_LINK_SENT
-                    ? back()->with('status', __($status))
-                    : back()->withInput($request->only('email'))
-                        ->withErrors(['email' => __($status)]);
+    //     return $status == Password::RESET_LINK_SENT
+    //                 ? back()->with('status', __($status))
+    //                 : back()->withInput($request->only('email'))
+    //                     ->withErrors(['email' => __($status)]);
+    // }
+
+    // Later for password reset
+    $user = userInfo::where('email',$request->email)->first();
+
+    // if(!$user){
+    //     return back()->withErrors([
+    //         'email' => 'We can\'t find a user with that email.'
+    //     ]);
+    // }
+
+    if (!$user) {
+    return back()->withInput($request->only('email'))
+                 ->withErrors(['email' => 'Invalid token or email address.']);
+    }
+
+
+    $token = Str::random(64);
+    $user->update(['forgotPasswordtoken' => $token]);
+
+    $user->notify(new ResetPasswordCustomNotification($token));
+
+    return back()->with('status', 'Reset Link Sent!' );
     }
 }
