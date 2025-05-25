@@ -4,7 +4,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\ProductInterestController;
-use App\Http\Controllers\UserInfoController;
+// use App\Http\Controllers\UserInfoController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfessionController;
 use App\Http\Controllers\PromotionController;
 use App\Http\Controllers\DrawstatController;
@@ -41,7 +42,7 @@ Route::middleware('auth')->group(function(){
 });
 
 Route::middleware('auth')->group(function(){
-    Route::get('/user',[UserInfoController::class,'index'])->name('user.index');
+    Route::get('/user',[UserController::class,'index'])->name('user.index');
 });
 
 Route::middleware('auth')->group(function(){

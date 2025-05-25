@@ -1,5 +1,3 @@
-<!-- Not Using Now -->
-
 <?php
 
 namespace App\Http\Controllers;
@@ -7,14 +5,14 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class UserInfoController extends Controller
+class UserController extends Controller
 {
-    /**
+     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $users = userInfo::paginate(4);
+        $users = User::paginate(4);
         return view('layouts.userinfo.user', compact('users'));
     }
 
@@ -37,7 +35,7 @@ class UserInfoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(userInfo $userInfo)
+    public function show(User $user)
     {
         //
     }
@@ -45,7 +43,7 @@ class UserInfoController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(userInfo $userInfo)
+    public function edit(User $user)
     {
         //
     }
@@ -53,7 +51,7 @@ class UserInfoController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, userInfo $userInfo)
+    public function update(Request $request, User $user)
     {
         //
     }
@@ -61,7 +59,7 @@ class UserInfoController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(userInfo $userInfo)
+    public function destroy(User $user)
     {
         //
     }
