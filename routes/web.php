@@ -13,6 +13,8 @@ use App\Http\Controllers\MessageTemplateController;
 use App\Http\Controllers\SmsContentController;
 use App\Http\Controllers\SmssendController;
 use App\Http\Controllers\NewmessageController;
+
+// use App\Mail\TestEmail;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -73,5 +75,12 @@ Route::middleware('auth')->group(function(){
     Route::get('/newmessage',[NewmessageController::class,'index'])->name('newmessage.send');
 });
 
+// Mail TEST
+// Route::get('/testroute',function(){
+//     $name = 'Red';
+
+//     // Mail Sending is completed
+//     Mail::to('mailtrapclub@gmail.com')->send(new TestEmail($name))->name('testmail');
+// });
 
 require __DIR__.'/auth.php';
