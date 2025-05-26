@@ -21,7 +21,9 @@
 
                     <span class="badge badge-light-success fw-bold fs-8 ms-2 px-2 py-1">Pro</span>
                 </div>
-                <a href="#" class="fw-semibold text-muted text-hover-primary fs-7">robert@kt.com</a>
+                <a href="#" class="fw-semibold text-muted text-hover-primary fs-7">
+                    {{ auth()->user()->email ?? '[null]' }}
+                </a>
             </div>
             <!--end::Username-->
         </div>
