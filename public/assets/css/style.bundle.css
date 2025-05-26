@@ -50854,6 +50854,8 @@ body,
 .btn-check:checked + [data-kt-app-layout=dark-header] .app-header .btn-custom.dropdown-toggle:after, .btn-check:active + [data-kt-app-layout=dark-header] .app-header .btn-custom.dropdown-toggle:after, [data-kt-app-layout=dark-header] .app-header .btn-custom:focus:not(.btn-active).dropdown-toggle:after, [data-kt-app-layout=dark-header] .app-header .btn-custom:hover:not(.btn-active).dropdown-toggle:after, [data-kt-app-layout=dark-header] .app-header .btn-custom:active:not(.btn-active).dropdown-toggle:after, [data-kt-app-layout=dark-header] .app-header .btn-custom.active.dropdown-toggle:after, [data-kt-app-layout=dark-header] .app-header .btn-custom.show.dropdown-toggle:after, .show > [data-kt-app-layout=dark-header] .app-header .btn-custom.dropdown-toggle:after {
   color: var(--bs-primary);
 }
+
+
 @media (min-width: 992px) {
   [data-kt-app-layout=dark-header] .app-header-menu .menu > .menu-item > .menu-link {
     color: #808290;
