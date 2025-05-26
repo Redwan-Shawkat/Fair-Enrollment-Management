@@ -51,7 +51,7 @@
   </div> -->
     <!--end::Menu item-->
     <!--begin::Menu item-->
-    <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+    {{-- <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
         data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
         <a href="#" class="menu-link px-5">
             <span class="menu-title">My Subscription</span>
@@ -109,7 +109,7 @@
             <!--end::Menu item-->
         </div>
         <!--end::Menu sub-->
-    </div>
+    </div> --}}
     <!--end::Menu item-->
     <!--begin::Menu item-->
     <!-- <div class="menu-item px-5">
@@ -122,7 +122,7 @@
     <!-- <div class="separator my-2"></div> -->
     <!--end::Menu separator-->
     <!--begin::Menu item-->
-    <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+    {{-- <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
         data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
         <a href="#" class="menu-link px-5">
             <span class="menu-title position-relative">Mode
@@ -198,10 +198,10 @@
             <!--end::Menu item-->
         </div>
         <!--end::Menu-->
-    </div>
+    </div> --}}
     <!--end::Menu item-->
     <!--begin::Menu item-->
-    <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+    {{-- <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
         data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
         <a href="#" class="menu-link px-5">
             <span class="menu-title position-relative">Language
@@ -253,12 +253,12 @@
             <!--end::Menu item-->
         </div>
         <!--end::Menu sub-->
-    </div>
+    </div> --}}
     <!--end::Menu item-->
     <!--begin::Menu item-->
-    <div class="menu-item my-1 px-5">
+    {{-- <div class="menu-item my-1 px-5">
         <a href="account/settings.html" class="menu-link px-5">Account Settings</a>
-    </div>
+    </div> --}}
     <!--end::Menu item-->
     <!--begin::Menu item-->
     <div class="menu-item px-5">
