@@ -1542,6 +1542,7 @@
                         </a>
                     @endif
                 @endauth
+
             </nav>
         @endif
     </header>
