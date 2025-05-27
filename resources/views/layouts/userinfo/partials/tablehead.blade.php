@@ -3,7 +3,7 @@
     <th class="min-w-125px text-center"> Web User ID </th>
     <th class="min-w-125px text-center"> Company ID </th>
     <th class="min-w-300px rounded-start ps-4 text-center">
-        Full Name
+       Name
     </th>
     <th class="min-w-125px text-center">Email </th>
     <th class="min-w-200px text-center">Contact No. </th>

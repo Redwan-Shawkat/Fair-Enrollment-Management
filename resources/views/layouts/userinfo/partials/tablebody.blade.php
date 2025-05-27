@@ -16,7 +16,7 @@
             </td>
             <td>
                 <a href="#"
-                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $user->fullname }}</a>
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $user->name }}</a>
                 {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Paid</span> --}}
             </td>
             <td>
