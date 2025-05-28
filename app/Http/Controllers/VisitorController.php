@@ -22,7 +22,7 @@ class VisitorController extends Controller
      */
     public function create()
     {
-        //
+        return view('layouts.visitor.visitor_form');
     }
 
     /**

@@ -34,6 +34,7 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware('auth')->group(function(){
     Route::get('/visitor',[VisitorController::class,'index'])->name('visitor.index');
+    Route::get('/visitorform',[VisitorController::class,'create'])->name('visitor.create');
 });
 
 Route::middleware('auth')->group(function(){
