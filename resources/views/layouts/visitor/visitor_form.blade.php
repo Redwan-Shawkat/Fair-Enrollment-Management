@@ -1,6 +1,11 @@
 @extends('layouts.app')
-@section('title', 'Visitor Form')
+@section('form_label', 'Visitor Form')
 
-@section('form_label')
-    New Visitor
+
+@section('content')
+
+
+    @include('layouts.visitor.forms.form')
+
+
 @endsection

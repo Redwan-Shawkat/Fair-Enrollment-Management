@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('visitors', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('companyid')->nullable();
+            $table->string('visitorname');
+            $table->string('visitorcompany');
+            $table->string('mobileno')->nullable();
+            $table->string('email')->unique();
+            $table->enum('gender',['male','female','other'])->nullable();
+            $table->string('thoughts');
             $table->timestamps();
         });
     }

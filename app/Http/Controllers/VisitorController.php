@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Visitor;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+
 
 class VisitorController extends Controller
 {
@@ -30,7 +32,79 @@ class VisitorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // if(!Auth::user() || Auth::user()->is_admin == 0){
+        //     return response()->json(['error' => 'Unauthorized'],403);
+        // }
+
+        $validated = $request->validate([
+            'visitorname' => 'required',
+            'visitorcompany' => 'required',
+            'email' => 'email|required|unique:visitor,email',
+            'mobileno' => 'nullable|string|min:11|max:11',
+            'gender' => 'nullable|in:male,female,other',
+            'thoughts' => 'nullable|string'
+        ]);
+
+        // // Crosscheck [Starts]
+        // Log::info('Validation passed', $validated);
+        //  // Crosscheck [Ends]
+
+        // Without DB
+        /*
+        $visitor = Visitor::create([
+            'name' => $validated['name'],
+            'company' => $validated['company'],
+            'email' => $validated['email'],
+            'mobileno' => $validated['mobileno'],
+            'gender' => $validated['gender'],
+            'thoughts' => $validated['thoughts']
+        ]);
+        */
+
+        // With Saving at DB
+        $visitor = new Visitor();
+        $visitor->visitorname = $validated['visitorname'];
+        $visitor->visitorcompany = $validated['visitorcompany'];
+        $visitor->email = $validated['email'];
+        $visitor->mobileno = $validated['mobileno'];
+        $visitor->gender = $validated['gender'];
+        $visitor->thoughts = $validated['thoughts'];
+        $visitor->save();
+
+        // $saved = $visitor->save();
+
+        // // Crosscheck [Starts]
+        // Log::info('Visitor save result', ['saved' => $saved, 'visitor_id' => $visitor->id]);
+
+        // if ($saved) {
+        //         return redirect()->route('visitor.index')->with('success', 'Visitor created successfully');
+        //     } else {
+        //         return redirect()->back()->withInput()->with('error', 'Failed to save visitor');
+        //     }
+
+        // } catch (\Illuminate\Validation\ValidationException $e) {
+        //     Log::error('Validation failed', ['errors' => $e->errors()]);
+        //     return redirect()->back()->withErrors($e->validator)->withInput();
+        // } catch (\Exception $e) {
+        //     Log::error('Error saving visitor', ['error' => $e->getMessage(), 'trace' => $e->getTraceAsString()]);
+        //     return redirect()->back()->withInput()->with('error', 'An error occurred while saving the visitor');
+        // }
+        // // Crosscheck [End]
+
+
+
+        /* Alert */
+        // return redirect()->route('visitor.index') -> with('success', 'Visitor created successfully');
+
+        /*
+        [Storing in DB]
+
+        */
+
+        /*
+        [Response Return]
+        return response() -> json($visitor, 201);
+        */
     }
 
     /**

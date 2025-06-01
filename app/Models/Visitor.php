@@ -9,22 +9,23 @@ class Visitor extends Model
 
     protected $table = 'visitor';
     protected $fillable = [
-        'id',
-        'name',
-        'mobile',
+        'visitorid',
+        'companyid',
+        'visitorname',
+        'mobileno',
         'email',
         'gender',
-        'visitorcomapny',
+        'visitorcompany',
         'thoughts',
-        'iswinner',
-        'issmssend',
-        'drawid',
-        'havetakenprize',
-        'winpos',
-        'prom_offerOid',
-        'is_redeem',
-        'profession_id',
-        'product_interest_id', //Foreign Key maybe
-        'coupon_code'
+        // 'iswinner',
+        // 'issmssend',
+        // 'drawid',
+        // 'havetakenprize',
+        // 'winpos',
+        // 'prom_offerOid',
+        // 'is_redeem',
+        // 'profession_id',
+        // 'product_interest_id', //Foreign Key maybe
+        // 'coupon_code's
     ];
 }
