@@ -31,7 +31,7 @@
            <label class="required fs-5 fw-semibold mb-2">@yield('inputLabel', 'Email')</label>
            <!--end::Label-->
            <!--begin::Input-->
-           <input class="form-control form-control-solid" placeholder="" name="email" />
+           <input type="email" class="form-control form-control-solid" placeholder="" name="email" />
            <!--end::Input-->
        </div>
        <!--end::Col-->
@@ -41,7 +41,7 @@
            <label class="fs-5 fw-semibold mb-2">@yield('inputLabel', 'Mobile')</label>
            <!--end::Label-->
            <!--end::Input-->
-           <input type="text" class="form-control form-control-solid" placeholder="" name="mobile" />
+           <input type="text" class="form-control form-control-solid" placeholder="" name="mobileno" />
            <!--end::Input-->
        </div>
        <!--end::Col-->
@@ -60,7 +60,7 @@
                class="form-select-solid form-select">
                <option value="Male">Male</option>
                <option value="Female">Female</option>
-               <option value="Custom">Other</option>
+               <option value="Other">Other</option>
            </select>
        </div>
        <!--end::Col-->

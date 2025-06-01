@@ -41,7 +41,7 @@ class VisitorController extends Controller
             'visitorcompany' => 'required',
             'email' => 'email|required|unique:visitor,email',
             'mobileno' => 'nullable|string|min:11|max:11',
-            'gender' => 'nullable|in:male,female,other',
+            'gender' => 'nullable|in:Male,Female,Other',
             'thoughts' => 'nullable|string'
         ]);
 
