@@ -12,6 +12,15 @@ class product_interest extends Model
         'id',
         'companyid',
         'name',
-        'active_status'
+        'active_status',
     ];
+
+
+    public function getActiveTextAttribute(){
+        return match($this->active_status){
+            0=>'Inactive',
+            1=>'Active',
+            default=>'Active'
+        };
+    }
 }

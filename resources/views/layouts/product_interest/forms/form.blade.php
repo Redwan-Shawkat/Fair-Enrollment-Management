@@ -12,12 +12,12 @@
             <!--begin::Toolbar container-->
             <div id="kt_app_toolbar_container" class="app-container container-xxl d-flex flex-stack">
                 <!--begin::Page title-->
-                @include('layouts.visitor.forms.partials.details.details')
+                @include('layouts.product_interest.forms.partials.details.details')
                 <!--end::Page title-->
                 <!--begin::Actions-->
                 <div class="d-flex align-items-center gap-lg-3 gap-2">
                     <!--begin::Filter menu-->
-                    @include('layouts.visitor.forms.partials.actions.actions')
+                    @include('layouts.product_interest.forms.partials.actions.actions')
                     <!--end::Filter menu-->
                     <!--begin::Secondary button-->
                     <!--end::Secondary button-->
@@ -39,19 +39,17 @@
                     <!--begin::Body-->
                     <div class="card-body p-lg-17">
                         <!--begin::Hero-->
-                        @include('layouts.visitor.forms.partials.details.partials.imgdetails')
+                        @include('layouts.product_interest.forms.partials.details.partials.imgdetails')
                         <!--end::-->
                         <!--begin::Layout-->
                         <div class="d-flex flex-column flex-lg-row mb-17">
                             <!--begin::Content-->
                             <div class="flex-lg-row-fluid me-lg-20 me-0">
-
-
                                 <!--begin::Form-->
-                                <form action="{{ route('visitor.store') }}" class="form mb-15" method="POST"
+                                <form action="{{ route('product.store') }}" class="form mb-15" method="POST"
                                     id="kt_form">
                                     @csrf
-                                    @include('layouts.visitor.forms.partials.input-fields.inputfield')
+                                    @include('layouts.product_interest.forms.partials.input-fields.inputfield')
                                 </form>
                                 <!--end::Form-->
                             </div>
@@ -72,7 +70,7 @@
     <!--end::Content wrapper-->
     <!--begin::Footer-->
     <div id="kt_app_footer" class="app-footer">
-        @include('layouts.visitor.forms.partials.footer')
+        @include('layouts.product_interest.forms.partials.footer')
     </div>
     <!--end::Footer-->
 </div>

@@ -29,9 +29,13 @@
                 <span
                     class="text-muted fw-semibold text-muted d-block fs-7 mt-1 text-center">{{ $visitor->email }}</span>
             </td>
-            <td>
+            {{-- <td>
                 <span
                     class="text-muted fw-semibold text-muted d-block fs-7 mt-1 text-center">{{ $visitor->gender }}</span>
+            </td> --}}
+            <td>
+                <span
+                    class="text-muted fw-semibold text-muted d-block fs-7 mt-1 text-center">{{ $visitor->gender_text }}</span>
             </td>
             <td>
                 <span
@@ -61,6 +65,8 @@
                 {{-- <a href="#"
                 class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm me-2 px-4">View</a> --}}
                 <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
+                <a href="#"
+                    class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Delete</a>
             </td>
         </tr>
     @endforeach

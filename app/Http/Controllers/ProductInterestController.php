@@ -21,7 +21,7 @@ class ProductInterestController extends Controller
      */
     public function create()
     {
-        //
+        return view('layouts.product_interest.product_interest_form');
     }
 
     /**
@@ -29,7 +29,18 @@ class ProductInterestController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required',
+            'active_status' => 'nullable|in:0,1',
+        ]);
+
+        // With Saving at DB
+        $product = new product_interest();
+        $product->name = $validated['name'];
+        $product->active_status = $validated['active_status'];
+        $product->save();
+
+        return redirect()->route('product_interest.index') -> with('success','Product Interest is Added Successfully');
     }
 
     /**

@@ -22,8 +22,7 @@
             </td>
             <td>
                 <a href="#"
-                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $product->active_status }}</a>
-                {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Web, UI/UX Design</span> --}}
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $product->active_text }}</a>
             </td>
             <td class="text-center">
                 {{-- <a href="#"

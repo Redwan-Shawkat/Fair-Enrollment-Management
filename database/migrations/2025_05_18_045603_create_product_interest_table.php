@@ -11,8 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('product_interests', function (Blueprint $table) {
+        Schema::create('product_interest', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('companyid')->nullable();
+            $table->string('name');
+            $table->enum('active_status',['active','inactive'])->nullable();
             $table->timestamps();
         });
     }

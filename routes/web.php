@@ -44,6 +44,8 @@ Route::middleware('auth')->group(function(){
 
 Route::middleware('auth')->group(function(){
     Route::get('/product',[ProductInterestController::class,'index'])->name('product.index');
+    Route::get('/productform',[ProductInterestController::class,'create'])->name('product.create');
+    Route::post('/product',[ProductInterestController::class,'store'])->name('product.store');
 });
 
 Route::middleware('auth')->group(function(){

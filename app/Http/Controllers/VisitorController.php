@@ -41,13 +41,10 @@ class VisitorController extends Controller
             'visitorcompany' => 'required',
             'email' => 'email|required|unique:visitor,email',
             'mobileno' => 'nullable|string|min:11|max:11',
-            'gender' => 'nullable|in:Male,Female,Other',
+            'gender' => 'nullable|in:0,1,2',
             'thoughts' => 'nullable|string'
         ]);
 
-        // // Crosscheck [Starts]
-        // Log::info('Validation passed', $validated);
-        //  // Crosscheck [Ends]
 
         // Without DB
         /*
@@ -73,28 +70,8 @@ class VisitorController extends Controller
 
         // $saved = $visitor->save();
 
-        // // Crosscheck [Starts]
-        // Log::info('Visitor save result', ['saved' => $saved, 'visitor_id' => $visitor->id]);
-
-        // if ($saved) {
-        //         return redirect()->route('visitor.index')->with('success', 'Visitor created successfully');
-        //     } else {
-        //         return redirect()->back()->withInput()->with('error', 'Failed to save visitor');
-        //     }
-
-        // } catch (\Illuminate\Validation\ValidationException $e) {
-        //     Log::error('Validation failed', ['errors' => $e->errors()]);
-        //     return redirect()->back()->withErrors($e->validator)->withInput();
-        // } catch (\Exception $e) {
-        //     Log::error('Error saving visitor', ['error' => $e->getMessage(), 'trace' => $e->getTraceAsString()]);
-        //     return redirect()->back()->withInput()->with('error', 'An error occurred while saving the visitor');
-        // }
-        // // Crosscheck [End]
-
-
-
         /* Alert */
-        // return redirect()->route('visitor.index') -> with('success', 'Visitor created successfully');
+        return redirect()->route('visitor.index') -> with('success', 'Product added successfully');
 
         /*
         [Storing in DB]

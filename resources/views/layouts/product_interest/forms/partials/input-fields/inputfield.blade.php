@@ -6,25 +6,27 @@
            <label class="required fs-5 fw-semibold mb-2">@yield('inputLabel', 'Name')</label>
            <!--end::Label-->
            <!--begin::Input-->
-           <input type="text" class="form-control form-control-solid" placeholder="" name="visitorname" />
+           <input type="text" class="form-control form-control-solid" placeholder="" name="name" />
            <!--end::Input-->
        </div>
        <!--end::Col-->
        <!--begin::Col-->
        <div class="col-md-6 fv-row">
+           <label class="fs-5 fw-semibold mb-2">@yield('inputLabel', 'Active Status')</label>
            <!--end::Label-->
-           <label class="required fs-5 fw-semibold mb-2">@yield('inputLabel', 'Company')</label>
-           <!--end::Label-->
-           <!--end::Input-->
-           <input type="text" class="form-control form-control-solid" placeholder="" name="visitorcompany" />
-           <!--end::Input-->
+           <!--begin::Select-->
+           <select name="gender" data-control="select2" data-placeholder="Select the Status.."
+               class="form-select-solid form-select">
+               <option value="1" selected>Active</option>
+               <option value="0">Inactive</option>
+           </select>
        </div>
        <!--end::Col-->
    </div>
    <!--end::Input group-->
    {{-- BREAK --}}
    <!--begin::Input group-->
-   <div class="row mb-5">
+   {{-- <div class="row mb-5">
        <!--begin::Col-->
        <div class="col-md-6 fv-row">
            <!--begin::Label-->
@@ -45,11 +47,11 @@
            <!--end::Input-->
        </div>
        <!--end::Col-->
-   </div>
+   </div> --}}
    <!--end::Input group-->
    {{-- BREAK --}}
    <!--begin::Input group-->
-   <div class="row mb-5">
+   {{-- <div class="row mb-5">
        <!--begin::Col-->
        <div class="col-md-6 fv-row">
            <!--begin::Label-->
@@ -74,11 +76,11 @@
            <!--end::Input-->
        </div>
        <!--end::Col-->
-   </div>
+   </div> --}}
    <!--end::Input group-->
 
    <!--begin::Separator-->
-   <div class="separator mb-8"></div>
+   {{-- <div class="separator mb-8"></div> --}}
    <!--end::Separator-->
    {{-- BREAK --}}
    <!--begin::Submit-->
