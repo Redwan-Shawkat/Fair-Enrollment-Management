@@ -50,6 +50,8 @@ Route::middleware('auth')->group(function(){
 
 Route::middleware('auth')->group(function(){
     Route::get('/user',[UserController::class,'index'])->name('user.index');
+    Route::get('/userform',[UserController::class, 'create'])->name('user.create');
+    Route::post('/user',[UserController::class, 'store'])->name('user.store');
 });
 
 Route::middleware('auth')->group(function(){

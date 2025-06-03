@@ -40,7 +40,7 @@ class ProductInterestController extends Controller
         $product->active_status = $validated['active_status'];
         $product->save();
 
-        return redirect()->route('product_interest.index') -> with('success','Product Interest is Added Successfully');
+        return redirect()->route('product.index') -> with('success','Product Interest is Added Successfully');
     }
 
     /**

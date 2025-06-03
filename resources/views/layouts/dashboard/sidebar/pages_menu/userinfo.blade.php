@@ -27,7 +27,7 @@
     <!--begin:Menu item-->
     <div class="menu-item">
         <!--begin:Menu link-->
-        <a class="menu-link" href="/newuser">
+        <a class="menu-link" href="/userform">
             <span class="menu-bullet">
                 <span class="bullet bullet-dot"></span>
             </span>

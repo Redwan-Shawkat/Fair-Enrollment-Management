@@ -1,4 +1,4 @@
-<!-- Not Using Now -->
+<!-- Not Using Right Now -->
 
 <?php
 
