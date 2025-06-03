@@ -1,20 +1,12 @@
-    @foreach ($companies as $comp)
+    @foreach ($companies as $index => $comp)
         <tr>
             <td>
-                <div class="d-flex align-items-center">
-                    <div class="symbol symbol-50px me-5">
-                        {{-- <span class="symbol-label bg-light">
-                    <img src="assets/media/svg/avatars/001-boy.svg" class="h-75 align-self-end" alt="" />
-                </span> --}}
-                    </div>
-                    <div class="d-flex justify-content-start flex-column w-50 mx-auto">
-                        <a href="#" class="fw-bold text-hover-primary fs-6 mb-1 text-gray-900">
-                            {{ $comp->id }}
-                        </a>
-                        {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">HTML, JS,
-                    ReactJS</span> --}}
-                    </div>
-                </div>
+                <a href="#"
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $index + 1 }}</a>
+            </td>
+            <td>
+                <a href="#"
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $comp->id }}</a>
             </td>
             <td>
                 <a href="#"
