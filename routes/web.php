@@ -40,6 +40,8 @@ Route::middleware('auth')->group(function(){
 
 Route::middleware('auth')->group(function(){
     Route::get('/company',[CompanyController::class,'index'])->name('company.index');
+    Route::get('/companyform',[CompanyController::class,'create'])->name('company.create');
+    Route::post('/company',[CompanyController::class,'store'])->name('company.store');
 });
 
 Route::middleware('auth')->group(function(){

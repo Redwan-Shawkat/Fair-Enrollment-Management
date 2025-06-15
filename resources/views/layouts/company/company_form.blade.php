@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('form_label', 'Company Insert Form')
+@section('form_label', 'Company Join Form')
 
 
 @section('content')

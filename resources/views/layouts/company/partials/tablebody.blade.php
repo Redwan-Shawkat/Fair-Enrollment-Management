@@ -19,13 +19,15 @@
                 {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Paid</span> --}}
             </td>
             <td>
-                <a href="#"
-                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $comp->logo }}</a>
+                {{-- <a href="#"
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $comp->logo }}</a> --}}
+                <img class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900"src="{{ asset($comp->logo) }}"
+                    alt="{{ $comp->name }}">
                 {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Web, UI/UX Design</span> --}}
             </td>
             <td>
                 <span
-                    class="text-muted fw-semibold text-muted d-block fs-7 mt-1 text-center">{{ $comp->isactive }}</span>
+                    class="text-muted fw-semibold text-muted d-block fs-7 mt-1 text-center">{{ $comp->active_text }}</span>
             </td>
             <td>
                 <span
