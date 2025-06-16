@@ -22,7 +22,7 @@ class ProfessionController extends Controller
      */
     public function create()
     {
-        //
+        return view ('layouts.profession.profession_form');
     }
 
     /**
@@ -30,7 +30,17 @@ class ProfessionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request -> validate([
+            'name' => 'required',
+            'active_status' => 'in:0,1',
+        ]);
+
+        $profession = new profession();
+        $profession->name = $validated ['name'];
+        $profession->active_status = $validated['active_status'] ?? 0;
+        $profession->save();
+
+        return redirect()->route('profession.index')->with('success','Profession is added Successfully');
     }
 
     /**

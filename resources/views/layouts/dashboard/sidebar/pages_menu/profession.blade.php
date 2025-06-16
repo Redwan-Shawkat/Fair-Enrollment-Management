@@ -46,7 +46,7 @@
     <!--begin:Menu item-->
     <div class="menu-item">
         <!--begin:Menu link-->
-        <a class="menu-link" href="/newprofession">
+        <a class="menu-link" href="/professionform">
             <span class="menu-bullet">
                 <span class="bullet bullet-dot"></span>
             </span>

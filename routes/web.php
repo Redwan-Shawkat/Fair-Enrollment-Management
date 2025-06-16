@@ -58,6 +58,8 @@ Route::middleware('auth')->group(function(){
 
 Route::middleware('auth')->group(function(){
     Route::get('/profession',[ProfessionController::class,'index'])->name('profession.index');
+    Route::get('/professionform',[ProfessionController::class,'create'])->name('profession.create');
+    Route::post('/profession',[ProfessionController::class,'store'])->name('profession.store');
 });
 
 Route::middleware('auth')->group(function(){

@@ -18,7 +18,7 @@
             </td>
             <td>
                 <a href="#"
-                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $profession->active_status }}</a>
+                    class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900">{{ $profession->active_text }}</a>
                 {{-- <span class="text-muted fw-semibold text-muted d-block fs-7">Web, UI/UX Design</span> --}}
             </td>
             <td class="text-center">
