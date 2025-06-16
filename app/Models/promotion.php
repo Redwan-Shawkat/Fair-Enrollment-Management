@@ -22,4 +22,5 @@ class promotion extends Model
             1=>'Active',
             default=>'Inactive'
         };
+    }
 }
