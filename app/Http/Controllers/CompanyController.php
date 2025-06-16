@@ -43,7 +43,8 @@ class CompanyController extends Controller
         ]);
 
         // Image Name
-        $logoName = time().'.'.$request->logo->extension();
+        // $logoName = time().'.'.$request->logo->extension();
+        $logoName = $request->logo->getClientOriginalName();
 
         //Checking if the storage path exists, if not - create one
         $imagePath = public_path('images');
