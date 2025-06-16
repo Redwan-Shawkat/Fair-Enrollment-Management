@@ -22,7 +22,7 @@
                     <!--begin::Secondary button-->
                     <!--end::Secondary button-->
                     <!--begin::Primary button-->
-                    {{-- @include('layouts.company.forms.partials.actions.partials.create') --}}
+                    {{-- @include('layouts.promotion.forms.partials.actions.partials.create') --}}
                     <!--end::Primary button-->
                 </div>
                 <!--end::Actions-->
