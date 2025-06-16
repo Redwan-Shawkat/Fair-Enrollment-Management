@@ -49,7 +49,7 @@
            <label class="sfs-5 fw-semibold mb-2">@yield('inputLabel', 'Input Field IDs')</label>
            <!--end::Label-->
            <!--begin::Input-->
-           <input type="text" class="form-control form-control-solid" placeholder="" name="field_id" />
+           <input type="text" class="form-control form-control-solid" placeholder="" name="input_field_ids" />
            <!--end::Input-->
        </div>
        <!--end::Col-->
