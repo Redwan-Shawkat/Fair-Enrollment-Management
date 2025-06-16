@@ -42,7 +42,7 @@ class CompanyController extends Controller
             'input_field_ids' => 'string'
         ]);
 
-        // Image Settings
+        // Image Name
         $logoName = time().'.'.$request->logo->extension();
 
         //Checking if the storage path exists, if not - create one
@@ -57,6 +57,8 @@ class CompanyController extends Controller
         //     $constraint->aspectRatio(); //Maintain Aspect Ratio
         //     $constraint->upsize(); //Don't Upsize Small Images
         // });
+
+
 
         // Moving the image to storage (without compression)
         $request -> logo->move(public_path('images'),$logoName);
