@@ -20,8 +20,8 @@ class Company extends Model
 
      public function getActiveTextAttribute(){
          return match($this->isactive){
-            '0' => 'Inactive',
-            '1' => 'Active',
+            0 => 'Inactive',
+            1 => 'Active',
             default => 'Inactive'
          };
      }
