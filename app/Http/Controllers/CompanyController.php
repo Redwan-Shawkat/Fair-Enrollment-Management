@@ -65,7 +65,7 @@ class CompanyController extends Controller
         $request -> logo->move(public_path('images'),$logoName);
 
         // Compressed Image Save
-        // $image->save($imagePath.'/'.$logoName,80); //80% data is being saved on DB
+        // $image->save($imagePath.'/'.$logoName,80); //80% data is being saved on DBs
 
         // Creating Data + Saving on DB
         $company = new Company();
