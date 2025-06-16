@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Company;
 use Illuminate\Http\Request;
 
-// Intervention (for making image comprossed)
-// use Intervention\Image\Laravel\Facades\Image;
+// Intervention (for making image resize & comprossed)
+use Intervention\Image\ImageManager;
+use Intervention\Image\Drivers\Gd\Driver;
 
 
 class CompanyController extends Controller
@@ -44,7 +45,7 @@ class CompanyController extends Controller
 
         // Image Name
         // $logoName = time().'.'.$request->logo->extension();
-        $logoName = $request->logo->getClientOriginalName();
+        // $logoName = $request->logo->getClientOriginalName();
 
         //Checking if the storage path exists, if not - create one
         $imagePath = public_path('images');
@@ -52,20 +53,25 @@ class CompanyController extends Controller
             mkdir($imagePath,0755,true);
         }
 
-        // // Resize & Compressed
-        // $image = Image::make($request->logo);
-        // $image->resize(300,300,function($constraint){
-        //     $constraint->aspectRatio(); //Maintain Aspect Ratio
-        //     $constraint->upsize(); //Don't Upsize Small Images
-        // });
+        // Resize & Compressed
+        $manager = new ImageManager(new Driver());
+        // Image Name
+        $logoName = $request->logo->getClientOriginalName();
+        // Read the image file
+        $img = $manager -> read($request->file('logo'));
+        // Resize
+        // $img = $img -> resize(370,246);
+        $img = $img -> resize(130,80);
 
+
+        // $img ->toJpeg(80)->save(public_path('images'),$logoName);
+        $img ->toJpeg(80)->save(public_path('images/' . $logoName));
+        //toJpeg(80) : 80 is the quality here
 
 
         // Moving the image to storage (without compression)
-        $request -> logo->move(public_path('images'),$logoName);
+        // $request -> logo->move(public_path('images'),$logoName);
 
-        // Compressed Image Save
-        // $image->save($imagePath.'/'.$logoName,80); //80% data is being saved on DBs
 
         // Creating Data + Saving on DB
         $company = new Company();

@@ -46,7 +46,7 @@
        <!--begin::Col-->
        <div class="col-md-6 fv-row">
            <!--begin::Label-->
-           <label class="required fs-5 fw-semibold mb-2">@yield('inputLabel', 'Input Field IDs')</label>
+           <label class="sfs-5 fw-semibold mb-2">@yield('inputLabel', 'Input Field IDs')</label>
            <!--end::Label-->
            <!--begin::Input-->
            <input type="text" class="form-control form-control-solid" placeholder="" name="field_id" />
