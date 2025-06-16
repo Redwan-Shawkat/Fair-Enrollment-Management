@@ -22,7 +22,7 @@ class PromotionController extends Controller
      */
     public function create()
     {
-        //
+        return view ('layouts.promotion.promotion_form');
     }
 
     /**
@@ -30,7 +30,36 @@ class PromotionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'prom_offer_name' => 'required|string',
+            'logo' => 'required|image|mimes:jpeg,jpg,png,gif|max:2048',
+            'is_active' => 'in:0,1',
+            'validate_from' => 'required|date',
+            'validate_to' => 'required|date|after:validate_from'
+        ]);
+
+        $imagePath = public_path('images');
+        if(!file_exists($imagePath)){
+            mkdir($imagePath,0755,true);
+        }
+
+        // Resize and Compressed
+        $manager = new ImageManager(new Drive());
+        $logoName = $request->logo->getClientOriginalName();
+        $img = $manager -> read($request->file('logo'));
+        $img = $img -> resize(130,80);
+
+        $img -> toJpeg(80)->save(public_path('images/',$logoName));
+
+        $promotional_offer = new promotion();
+        $promotional_offer->prom_offer_name = $validated['prom_offer_name'];
+        $promotional_offer->logo = $validated ['logo'];
+        $promotional_offer->is_active = $validated ['is_active'] ?? 1;
+        $promotional_offer->validate_from = $validated ['validate_from'];
+        $promotional_offer->validate_to = $validated ['validate_to'];
+        $promotional_offer->save();
+
+        return redirect()->route('promotion.index') -> with('success','Promotional Offer is being Added Successfully');
     }
 
     /**
