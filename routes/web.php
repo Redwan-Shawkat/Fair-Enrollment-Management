@@ -65,7 +65,7 @@ Route::middleware('auth')->group(function(){
 Route::middleware('auth')->group(function(){
     Route::get('/promotion',[PromotionController::class,'index'])->name('promotion.index');
     Route::get('/promotionalform',[PromotionController::class,'create'])->name('promotion.create');
-    Route::post('/promotion',[ProductInterestController::class,'store'])->name('promotion.store');
+    Route::post('/promotion',[PromotionController::class,'store'])->name('promotion.store');
 });
 
 Route::middleware('auth')->group(function(){
