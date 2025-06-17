@@ -39,6 +39,8 @@
 
                 <a href="#"
                     class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 text-center">Edit</a>
+                <a href="#"
+                    class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 text-center">Delete</a>
             </td>
         </tr>
     @endforeach
