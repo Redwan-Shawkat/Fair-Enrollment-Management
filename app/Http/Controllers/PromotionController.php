@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\promotion;
 use Illuminate\Http\Request;
 
+// Intervention (for making image resize & comprossed)
+use Intervention\Image\ImageManager;
+use Intervention\Image\Drivers\Gd\Driver;
+
 class PromotionController extends Controller
 {
     /**
@@ -44,12 +48,12 @@ class PromotionController extends Controller
         }
 
         // Resize and Compressed
-        $manager = new ImageManager(new Drive());
+        $manager = new ImageManager(new Driver());
         $logoName = $request->logo->getClientOriginalName();
         $img = $manager -> read($request->file('logo'));
         $img = $img -> resize(130,80);
 
-        $img -> toJpeg(80)->save(public_path('images/',$logoName));
+        $img -> toJpeg(80)->save(public_path('images/'.$logoName));
 
         $promotional_offer = new promotion();
         $promotional_offer->prom_offer_name = $validated['prom_offer_name'];
@@ -59,7 +63,7 @@ class PromotionController extends Controller
         $promotional_offer->validate_to = $validated ['validate_to'];
         $promotional_offer->save();
 
-        return redirect()->route('promotion.index') -> with('success','Promotional Offer is being Added Successfully');
+        return redirect()->route('promotion.index') -> with('success','Promotional Offer is  Added Successfully');
     }
 
     /**
