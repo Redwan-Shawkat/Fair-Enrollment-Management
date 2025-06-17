@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\profession;
 use Illuminate\Http\Request;
 
+// Intervention (for making image resize & comprossed)
+use Intervention\Image\ImageManager;
+use Intervention\Image\Drivers\Gd\Driver;
+
 class ProfessionController extends Controller
 {
     /**
