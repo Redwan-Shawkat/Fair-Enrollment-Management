@@ -1,11 +1,11 @@
 @extends('layouts.app')
-@section('form_label', 'Company Insert Form')
+@section('form_label', 'Product Interest Insert Form')
 
 
 @section('content')
 
 
-    @include('layouts.company.forms.form')
+    @include('layouts.product_interest.forms.form')
 
 
 @endsection

@@ -26,7 +26,7 @@
            <label class="fs-5 fw-semibold mb-2">@yield('inputLabel', 'Active Status')</label>
            <!--end::Label-->
            <!--begin::Select-->
-           <select name="isactive" data-control="select2" data-placeholder="Select the Status.."
+           <select name="is_active" data-control="select2" data-placeholder="Select the Status.."
                class="form-select-solid form-select">
                <option value="1" selected>Active</option>
                <option value="0">Inactive</option>

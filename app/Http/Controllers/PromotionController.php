@@ -57,7 +57,7 @@ class PromotionController extends Controller
 
         $promotional_offer = new promotion();
         $promotional_offer->prom_offer_name = $validated['prom_offer_name'];
-        $promotional_offer->logo = $validated ['logo'];
+        $promotional_offer->logo = 'images/'.$logoName;
         $promotional_offer->is_active = $validated ['is_active'] ?? 1;
         $promotional_offer->validate_from = $validated ['validate_from'];
         $promotional_offer->validate_to = $validated ['validate_to'];

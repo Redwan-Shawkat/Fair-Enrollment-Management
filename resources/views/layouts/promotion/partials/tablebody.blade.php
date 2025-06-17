@@ -17,7 +17,7 @@
             </td>
             <td>
                 <img class="fw-bold text-hover-primary d-block fs-6 mb-1 text-center text-gray-900"src="{{ asset($prom->logo) }}"
-                    alt="{{ $prom->name }}">
+                    alt="{{ $prom->prom_offer_name }}">
             </td>
             <td>
                 <span
