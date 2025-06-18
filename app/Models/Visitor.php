@@ -8,6 +8,8 @@ class Visitor extends Model
 {
 
     protected $table = 'visitor';
+    protected $primaryKey = 'visitorid';
+
     protected $fillable = [
         'visitorid',
         'companyid',

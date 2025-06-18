@@ -1,7 +1,13 @@
 <!--begin::Logo image-->
 <span>
+    <!--
     <img alt="Logo" src="assets/media/logos/fairlogo-big.svg" class="h-25px w-200px app-sidebar-logo-default" />
-    <img alt="Logo" src="assets/media/logos/fairlogo-small.svg" class="h-20px app-sidebar-logo-minimize" />
+    <img alt="Logo" src="assets/media/logos/fairlogo-small.svg" class="h-20px app-sidebar-logo-minimize" -->
+    <img alt="Logo" src="{{ asset('assets/media/logos/fairlogo-big.svg') }}"
+        class="h-25px w-200px app-sidebar-logo-default" />
+    <img alt="Logo" src="{{ asset('assets/media/logos/fairlogo-small.svg') }}"
+        class="h-20px app-sidebar-logo-minimize" />
+
     {{-- <h3 class="h-25px app-sidebar-logo-default"> LOGO PLACEMENT </h3> --}}
 </span>
 <!--end::Logo image-->

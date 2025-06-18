@@ -1,16 +1,17 @@
 @extends('layouts.app')
-@section('title', 'Visitor')
-@section('content')
+@section('title', 'Visitors')
 
-    {{-- PAGINATION ARROW  --}}
-    <style>
-        svg.w-5.h-5 {
-            width: 20px !important;
-            height: 20px !important;
-            max-width: 100% !important;
-            max-height: 100% !important;
-        }
-    </style>
+{{-- PAGINATION ARROW  --}}
+<style>
+    svg.w-5.h-5 {
+        width: 20px !important;
+        height: 20px !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+    }
+</style>
+
+@section('content')
 
     <!--begin::Toolbar-->
     <div class="card mb-xl-8 mb-5">

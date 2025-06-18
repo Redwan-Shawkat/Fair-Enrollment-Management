@@ -16,7 +16,7 @@ class VisitorController extends Controller
     {
         // $visitors = Visitor::all();
         $visitors = Visitor::paginate(10);
-        return view('layouts.visitor.visitor',compact('visitors'));
+        return view('layouts.visitor.index',compact('visitors'));
     }
 
     /**
@@ -87,17 +87,21 @@ class VisitorController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Visitor $visitor)
+    // public function show(Visitor $visitor)
+    public function show($id)
     {
-        //
+    $visitors = Visitor::where('visitorid', $id)->paginate(1);
+    return view('layouts.visitor.show', compact('visitors'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Visitor $visitor)
+    // public function edit(Visitor $visitor)
+    public function edit($visitorid)
     {
-        //
+         //Confusion
+        // echo "Hi $visitorid";
     }
 
     /**
